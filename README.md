@@ -1,6 +1,10 @@
 # Wayne State University Footer
 
-![Header Image](https://raw.githubusercontent.com/waynestate/wsufooter/assets/images/footer.png)
+## Desktop footer
+![footer image](https://raw.githubusercontent.com/waynestate/wsufooter/assets/images/footer.png)
+
+## Mobile footer
+![Global footer image](https://raw.githubusercontent.com/waynestate/wsufooter/assets/images/footer-mobile.png)
 
 ## Demo
 
@@ -9,6 +13,7 @@ Open `demo/index.html` in your browser
 ## Installation
 
     npm install
+    chmod +x build.sh
     npm run build
 
 ## Override max-width
