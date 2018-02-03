@@ -2,11 +2,15 @@
     Wrapper
 --------------------------------------------------------------*/
 .wsuwrap {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     display: table;
     position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px; // School/college
+    //max-width: 1170px; // Wayne.edu
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*--------------------------------------------------------------
@@ -17,31 +21,27 @@
     background: linear-gradient(to bottom, #b1c5c2 0%,#cbdbd9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b1c5c2', endColorstr='#cbdbd9',GradientType=0 ); /* IE6-9 */
 	border-top: 1px solid #536461;
-}
 
-.wsufooter .wsuwrap {
-    padding: 0;
-}
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        margin: 0;
+        padding: 6px 0;
+    }
 
-.wsufooter p {
-    font-family: Arial, Helvetica, sans-serif;
-	font-size: 0.8em;
-	margin: 0;
-	padding: 6px 15px;
-}
+    a {
+        color: #0C5449;
+        text-decoration: underline;
+    }
 
-.wsufooter a {
-	color: #0C5449;
-	text-decoration: underline;
-}
+    a:hover {
+        text-decoration: none;
+    }
 
-.wsufooter a:hover {
-	text-decoration: none;
-}
-
-.wsufooter .privacy,
-.wsufooter .copyright {
-    text-align: center;
+    .privacy,
+    .copyright {
+        text-align: center;
+    }
 }
 
 @media (min-width: 450px) {
