@@ -13,7 +13,6 @@ Open `demo/index.html` in your browser
 ## Installation
 
     npm install
-    chmod +x build.sh
     npm run build
 
 ## Override max-width
