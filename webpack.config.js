@@ -1,28 +1,18 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: ['./src/footer.scss'],
-    output: {
-        filename: 'dist/footer.css'
-    },
+    entry: ["./src/footer.scss"],
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    use: 'css-loader?importLoaders=1',
-                }),
-            },
-            {
-                test: /\.(sass|scss)$/,
-                use: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+                test: /\.(sa|sc|c)ss$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin({
-            filename: 'dist/footer.css',
-            allChunks: true,
-        }),
-    ],
+        new MiniCssExtractPlugin({
+            filename: "footer.css"
+        })
+    ]
 };
