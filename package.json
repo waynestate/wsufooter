@@ -1,6 +1,6 @@
 {
     "name": "@waynestate/wsufooter",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "description": "Wayne State University Footer",
     "scripts": {
         "build": "webpack --optimize-minimize --mode=production && rm dist/main.js && cp src/footer.html dist/footer.html && cat src/demo-start.html src/footer.html src/demo-end.html > demo/index.html"
